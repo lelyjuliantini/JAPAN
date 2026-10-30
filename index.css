@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #f8f9fa;
+}
+
+a:hover {
+    color: #5e0000;
+}
+
+nav {
+    background-color: rgb(251, 63, 100);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover::after {
+    color: #cc0000;
+    content: " 🎌";
+}
+
+body > header {
+    background-color: rgb(251, 114, 142);
+    color: white;
+    padding-top: 45px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    padding: 0 20px 50px 20px;
+}
+
+main {
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+}
+
+/* Konten Utama (Sejarah, Geografis, Wisata) */
+#content {
+    flex: 3;
+    min-width: 0; /* Mencegah overflow agar flex bekerja dengan baik */
+}
+
+#content article {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(47, 36, 36, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+#content article img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+#content h2 {
+    color: rgb(255, 0, 106);
+    margin: 10px 0;
+}
+
+#content h3 {
+    color: rgb(255, 0, 106);
+    margin: 20px 0 10px 0;
+}
+
+#content p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Sidebar Samping */
+aside {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    height: fit-content;
+}
+
+/* Pembatasan ukuran logo agar tidak melebarkan sidebar */
+aside figure img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+aside section {
+    text-align: left;
+}
+
+aside table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;         
+}
+
+aside th, aside td {
+    padding: 12px 5px;              
+    border-bottom: 1px solid #ddd; 
+}
+
+aside th {
+    text-align: left;             
+    width: 40%;                      
+}
+
+aside h2, aside h3 {
+    color: rgb(255, 0, 106);
+}
+
+aside td {
+    text-align: left;          
+    color: #333;                  
+}
+
+aside tr:last-child th, aside tr:last-child td {
+    border-bottom: none;
+}
+
+footer {
+    background-color: rgb(251, 63, 100);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
